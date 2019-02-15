@@ -7,7 +7,7 @@ How to control:
 Use ← → to control position, ↑ to change direction, ↓ to accelerate falling speed, spacebar to fall to the end immediatly. use P to pause. 
 
 Shaps of blocks:  
-There will be seven shapes in this game and each shape formed by four squares.
+There will be seven shapes in this game and each shape forms by four squares.
 
 ![image](https://github.com/tonyqtang/ee551project/blob/master/different%20_blocks.jpg)
 
