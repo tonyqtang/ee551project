@@ -8,3 +8,6 @@ Shaps of blocks:
 
 There will be seven shapes in this game.
 
+![image]
+(https://github.com/tonyqtang/ee551project/blob/master/different%20_blocks.jpg)
+
