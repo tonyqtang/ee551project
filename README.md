@@ -6,7 +6,7 @@ Different shaped blocks fall from the top of the screen, the player can adjust b
 
 How to play:
 
-Use ← → to control position and ↑ to change direction. use p to pause. 
+Use ← → to control position, ↑ to change direction, ↓ to accelerate falling speed, spacebar to fall to the end immediatly. use p to pause. 
 
 Shaps of blocks:
 
