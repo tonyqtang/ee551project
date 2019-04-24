@@ -1,6 +1,6 @@
 EE551project_Tetris
 
-<<<<<<< HEAD
+
 Rules:
 Different shaped blocks fall from the top of the screen, the player can adjust blocks' direction and position. when the block fall to the bottom or it touches another exist blocks, it stops.
 =======
@@ -26,4 +26,4 @@ General steps in coding this game:
 6.Judge if blocks touch the top.
 
 P.S. There is a game I really like in my phone called "1010!". It's similar to Tetris with different types of blocks. But you need to drag the block to its position instead of watching it falling down and it will erase all complete rows and columns. I'd like to try it when I learn how to write the classic one.
->>>>>>> 3000d6bd298f9cc0feea2feecf8ed6c6836653d5
+
