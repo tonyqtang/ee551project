@@ -23,7 +23,7 @@ General steps in coding this game:
 5.Erase a row if it is complete.  (completed)
 6.Judge if blocks touch the top.  (completed)
 
-How to run the code:
+How to run the code:  
 You can use Python's built-in IDLE to open the main.py file and click run to run it. Make sure you have pygame module installed.  
 
 
