@@ -8,12 +8,8 @@ GAME_AREA_HEIGHT = CELL_WIDTH * LINE_NUM  # 20 rows
 GAME_AREA_LEFT = CELL_WIDTH * 2  # width of left blank area
 GAME_AREA_TOP = SCREEN_HEIGHT - GAME_AREA_HEIGHT - 40  # width of top blank area
 
-EDGE_COLOR = (0, 0, 0)  # black
-CELL_COLOR = (100, 100, 100)
 BG_COLOR = (0, 0, 0)
-
-HOLD_DELAY = 150
-HOLD_MOVING_SPEED = 40
+GRID_COLOR = (51, 51, 51)
 
 # shapes of blocks
 S_SHAPE_TEMPLATE = [['0110',
@@ -86,34 +82,23 @@ BLOCK = {'S': S_SHAPE_TEMPLATE,
 
 BLOCK_TYPES = ['S', 'Z', 'I', 'O', 'J', 'L', 'T']
 
-BLOCK_COLOR = {'S': (0, 255, 128),  # green
-               'Z': (255, 128, 255),  # rose red
-               'I': (128, 0, 255),  # violet
-               'O': (0, 0, 255),  # blue
-               'J': (0, 128, 0),  # dark green
-               'L': (255, 0, 0),  # red
-               'T': (255, 128, 0)  # orange
+BLOCK_COLOR = {'S': (244, 208, 0),
+               'Z': (255, 67, 101),
+               'I': (255, 128, 255),
+               'O': (38, 188, 213),
+               'J': (0, 173, 87),
+               'L': (0, 90, 171),
+               'T': (255, 128, 0)
                }
-CUBE_COLORS = [
-    (0xcc, 0x99, 0x99), (0xff, 0xff, 0x99), (0x66, 0x66, 0x99),
-    (0x99, 0x00, 0x66), (0xff, 0xcc, 0x00), (0xcc, 0x00, 0x33),
-    (0xff, 0x00, 0x33), (0x00, 0x66, 0x99), (0xff, 0xff, 0x33),
-    (0x99, 0x00, 0x33), (0xcc, 0xff, 0x66), (0xff, 0x99, 0x00)
-]
 
-WALL_BLANK_LABEL = '-'
+WALL_BLANK_LABEL = '0'
 
 TIMER_INTERVAL = 1000  # auto-falling speed
 
-SCORE_FONT = 'bitstreamverasans'
-SCORE_SIZE = 33
-SCORE_COLOR = (255, 0, 0)
-
 EDGE_WIDTH = 3
-MARGIN_WIDTH = 25
+MARGIN_WIDTH = 100
 
-DIFFICULTY_LEVEL_INTERVAL = 100
-TIMER_FASTER_VALUE = 50
+LEVEL_RANGE = 100
 
 WHITE = (255, 255, 255)
-GRID_COLOR = (51, 51, 51)
+BLACK = (0, 0, 0)

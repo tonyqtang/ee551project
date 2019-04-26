@@ -1,7 +1,6 @@
 from settings import *
 
 
-
 class Wall:
     def __init__(self, screen):
         self.screen = screen
@@ -37,7 +36,7 @@ class Wall:
 
         # count score for different lines eliminated
         eliminated_num = len(line_eliminated)
-        assert (eliminated_num <= 4 and eliminated_num >= 0)
+        assert (0 <= eliminated_num <= 4)
         if eliminated_num < 3:
             score = eliminated_num
         elif eliminated_num == 3:

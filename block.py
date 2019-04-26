@@ -3,13 +3,13 @@ from gamedisplay import GameDisplay
 
 
 class Block:
-    def __init__(self, shape, turn_time,screen, wall):
+    def __init__(self, shape, turn_time, screen, wall):
         self.x = 4
         self.y = 0
         self.shape = shape
         self.dir = turn_time  # turning times
         self.screen = screen
-        self.touch_bottom = False  # whether touch the bottom
+        self.on_bottom = False  # whether touch the bottom
         self.wall = wall
 
     # paint block
@@ -25,7 +25,7 @@ class Block:
     # draw one cell
     def draw_cell(self, row, column):
         GameDisplay.draw_cell(self.screen, (column * CELL_WIDTH + GAME_AREA_LEFT + 1,
-                         row * CELL_WIDTH + GAME_AREA_TOP + 1), BLOCK_COLOR[self.shape])
+                                            row * CELL_WIDTH + GAME_AREA_TOP + 1), BLOCK_COLOR[self.shape])
 
     # implement commands
     def move_right(self):
@@ -40,10 +40,10 @@ class Block:
         if self.can_move_down():
             self.y += 1
         else:
-            self.touch_bottom = True
+            self.on_bottom = True
 
     def fall_down(self):
-        while not self.touch_bottom:
+        while not self.on_bottom:
             self.move_down()
 
     def turn(self):

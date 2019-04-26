@@ -17,7 +17,7 @@ class GameState:
         self.game_score = 0
         self.stopped = True
         self.paused = False
-        self.session_count = 0
+        self.play_times = 0
         self.level = 1
 
     def set_timer(self, timer_interval):
@@ -28,10 +28,17 @@ class GameState:
 
     def add_score(self, score):
         self.game_score += score
-        level = self.game_score // DIFFICULTY_LEVEL_INTERVAL + 1
+        level = self.game_score // LEVEL_RANGE + 1
         if level > self.level:
             self.level += 1
-            self.timer_interval -= TIMER_FASTER_VALUE
+            if self.timer_interval >= 500:
+                self.timer_interval -= 50
+            elif 200 <= self.timer_interval < 500:
+                self.timer_interval -= 30
+            elif 100 <= self.timer_interval < 200:
+                self.timer_interval -= 20
+            elif 0 < self.timer_interval < 100:
+                self.timer_interval -= 10
             pygame.time.set_timer(pygame.USEREVENT, self.timer_interval)
 
     def start_game(self):
@@ -40,11 +47,11 @@ class GameState:
         self.timer_interval = TIMER_INTERVAL
         self.block = self.new_block()
         self.block = self.new_block()
-        self.session_count += 1
+        self.play_times += 1
         self.wall.clear()
         self.game_score = 0
         self.paused = False
-        random.seed(int(time.time()))
+        # random.seed(int(time.time()))
 
     def new_block(self):
         self.block = self.next_block
@@ -61,7 +68,7 @@ class GameState:
         self.set_timer(self.timer_interval)
         self.paused = False
 
-    def bottom(self):
+    def touch_bottom(self):
         self.wall.add_to_wall(self.block)
         self.add_score(self.wall.eliminate_line())
         for c in range(COLUMN_NUM):
