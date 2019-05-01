@@ -16,12 +16,12 @@ There will be seven shapes in this game and each shape forms by four squares.
 Player can change each shape's direction which means 90 degrees clock-wise each time when pressing ↑.
 
 General steps in coding this game:  
-1.Define the shape of blocks and what do they look like when diretion changed.  (completed)
-2.Define the control command.  (completed)
-3.Generate a random block.   (completed)
-4.Judge if a block is landed.  (completed)
-5.Erase a row if it is complete.  (completed)
-6.Judge if blocks touch the top.  (completed)
+1.Define the shape of blocks and what do they look like when diretion changed.  (completed)  
+2.Define the control command.  (completed)  
+3.Generate a random block.   (completed)  
+4.Judge if a block is landed.  (completed)  
+5.Erase a row if it is complete.  (completed)  
+6.Judge if blocks touch the top.  (completed)  
 
 How to run the code:  
 You can use Python's built-in IDLE to open the main.py file and click run to run it. Make sure you have pygame module installed.  
