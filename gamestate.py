@@ -3,7 +3,6 @@ from settings import *
 from block import Block
 from gamewall import Wall
 import pygame
-import time
 
 
 class GameState:
