@@ -1,6 +1,6 @@
-SCREEN_WIDTH = 600
-SCREEN_HEIGHT = 750
-CELL_WIDTH = 28  # each cell size (pixels)
+SCREEN_WIDTH = 560
+SCREEN_HEIGHT = 650
+CELL_WIDTH = 24  # each cell size (pixels)
 COLUMN_NUM = 12
 LINE_NUM = 24
 GAME_AREA_WIDTH = CELL_WIDTH * COLUMN_NUM  # 10 cells one row
